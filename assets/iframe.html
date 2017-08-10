@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- http://garden.zendesk.com -->
+  <link rel="stylesheet" href="https://assets.zendesk.com/apps/sdk-assets/css/1/zendesk_garden.css" type="text/css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="content"></div>
+  <!-- https://github.com/zendesk/zendesk_app_framework_sdk -->
+
+  <script id="start-hdbs" type="text/x-handlebars-template">
+    <p><a id="get-tasks" href="#">Get tasks</a></p>
+  </script>
+
+  <script id="tasks-hdbs" type="text/x-handlebars-template">
+    <p>Tech notes tasks:</p>
+    <ul>
+      {{#each project_tasks}}
+      <li><a href="https://app.asana.com/0/404374073789112/{{id}}" target="_blank">{{name}}</a></li>
+      {{/each}}
+    </ul>
+  </script>
+
+  <script id="error-hdbs" type="text/x-handlebars-template">
+    <p>Problem with the request: {{status}} {{statusText}}</p>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

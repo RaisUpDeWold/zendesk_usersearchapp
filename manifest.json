@@ -1,0 +1,17 @@
+{
+  "name": "EndUserSearch",
+  "author": {
+    "name": "Raisup Dewold",
+    "email": "raisupdewold@gmail.com",
+    "url": ""
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "new_ticket_sidebar": "assets/iframe.html"
+    }
+  },
+  "version": "1.0",
+  "frameworkVersion": "2.0"
+}
